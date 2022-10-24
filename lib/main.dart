@@ -4,7 +4,7 @@ void main() {
   var appTitle = Text('我的第一個Flutter App'),
       hiFlutter = Text(
         'hi,Flutter.\n今日作業0926',
-        style: TextStyle(fontSize: 40,
+        style: TextStyle(fontSize: 30,
         decoration: TextDecoration.underline,
         color:Colors.deepOrange,
         fontWeight: FontWeight.bold),
@@ -15,12 +15,16 @@ void main() {
 
   var appBody = Center(
       child: Container(
-        margin: const EdgeInsets.all(10.0),
+        child: hiFlutter,
+        alignment: Alignment.topRight,
+        margin: const EdgeInsets.all(60.0),
         color: Colors.cyanAccent,
-        width: 100.0,
-        height: 100.0,
-      )
+        width: 400.0,
+        height: 600.0,
+      ),
+
   );
+
 
   var appBar = AppBar(
     title: appTitle,
