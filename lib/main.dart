@@ -14,8 +14,13 @@ void main() {
   var img = Image.network("https://cdn.hk01.com/di/media/images/564665/org/309ab10bf6e687c9b753948397acbbb0.jpg/AQ1ai7OnXqo8abiXokjBmz7cM9Tbycma986aX_fOml8");
 
   var appBody = Center(
-      child: img,
-     );
+      child: Container(
+        margin: const EdgeInsets.all(10.0),
+        color: Colors.cyanAccent,
+        width: 100.0,
+        height: 100.0,
+      )
+  );
 
   var appBar = AppBar(
     title: appTitle,
