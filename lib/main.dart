@@ -11,8 +11,10 @@ void main() {
         textAlign: TextAlign.justify,
       );
 
+  var img = Image.network("https://cdn.hk01.com/di/media/images/564665/org/309ab10bf6e687c9b753948397acbbb0.jpg/AQ1ai7OnXqo8abiXokjBmz7cM9Tbycma986aX_fOml8");
+
   var appBody = Center(
-      child: hiFlutter,
+      child: img,
      );
 
   var appBar = AppBar(
